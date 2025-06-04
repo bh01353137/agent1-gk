@@ -15,40 +15,47 @@ def get_db_connection():
     return pyodbc.connect(conn_str)
 
 def insert_incident(incident_data):
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute(
-        "INSERT INTO Incidents (Title, Description, Status) VALUES (?, ?, ?)",
-        incident_data['title'],
-        incident_data['description'],
-        incident_data['status']
-    )
-    conn.commit()
-    cursor.close()
-    conn.close()
+    logging.info(f"inside insert_incident 1: {incident_data}")
+    try:
+        conn = get_db_connection()
+        logging.info(f"inside insert_incident 2:")
+
+        cursor = conn.cursor()
+        cursor.execute(
+            "INSERT INTO incident_data (INC_Number, Description, Status) VALUES (?, ?, ?)",
+            incident_data['INC_Number'],
+            incident_data['description'],
+            incident_data['status']
+        )
+        logging.info(f"inside insert_incident 3:")
+
+        conn.commit()
+    except Exception as e:
+        logging.error(f"Error inserting incident: {e}")
+        raise
+    finally:
+        if 'cursor' in locals():
+            cursor.close()
+        if 'conn' in locals():
+            conn.close()
 
 
 @app.route(route="http_trigger")
 def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
-    name = req.params.get('title')
-    description = req.params.get('description')   
-    status = req.params.get('status')
+    description = req.get_body().decode('utf-8')
     
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('title')
-        
-        insert_incident({
-            'title': name,
-            'description': description,
-            'status': status
-        })
+    logging.info(f"Received text: {description}")
+    
+    name = 'Test1'
+    status = 'Open'
+    
+    insert_incident({
+        'INC_Number': name,
+        'description': description,
+        'status': status
+    })
 
     # name = req.params.get('name')
     # if not name:
@@ -60,7 +67,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     #         name = req_body.get('name')
 
     if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
+        return func.HttpResponse(f"Hello, {description}. This HTTP triggered function executed successfully.")
     else:
         return func.HttpResponse(
              "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
