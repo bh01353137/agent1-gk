@@ -1,0 +1,423 @@
+{
+  "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82",
+  "name": "Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82",
+  "type": "Microsoft.Resources/deployments",
+  "properties": {
+    "templateHash": "16859368053996587561",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "c27ab754-1d68-4dac-8ac8-aab34020b6d4"
+      },
+      "name": {
+        "type": "String",
+        "value": "agent1-gk"
+      },
+      "location": {
+        "type": "String",
+        "value": "UK South"
+      },
+      "storageBlobContainerName": {
+        "type": "String",
+        "value": "app-package-agent1-gk-95edf69"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "bhukbaserga1d4"
+      },
+      "sku": {
+        "type": "String",
+        "value": "FlexConsumption"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "FC1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "repoUrl": {
+        "type": "String",
+        "value": "https://github.com/bh01353137/agent1-gk"
+      },
+      "branch": {
+        "type": "String",
+        "value": "main"
+      },
+      "oidcUserIdentityName": {
+        "type": "String",
+        "value": "agent1-gk-id-b173"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-BHUKBaseRG-9250"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "BH-UK-Base-RG"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      },
+      "mongoDBName": {
+        "type": "String",
+        "value": "agent1-gk-cosmosdbformongodb-bd55"
+      },
+      "cosmosDBAdminPassword": {
+        "type": "SecureString"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2025-06-04T16:16:38.2174432Z",
+    "duration": "PT6M37.0666393S",
+    "correlationId": "a0d40f1e-fc47-44b2-8689-e2f83d095ccb",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "uksouth"
+            ]
+          },
+          {
+            "resourceType": "sites/basicPublishingCredentialsPolicies",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "sites/sourcecontrols",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "uksouth"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.ManagedIdentity",
+        "resourceTypes": [
+          {
+            "resourceType": "userAssignedIdentities",
+            "locations": [
+              "uksouth"
+            ]
+          },
+          {
+            "resourceType": "userAssignedIdentities/federatedIdentityCredentials",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Authorization",
+        "resourceTypes": [
+          {
+            "resourceType": "roleAssignments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.DocumentDb",
+        "resourceTypes": [
+          {
+            "resourceType": "mongoClusters",
+            "locations": [
+              "uksouth"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "microsoft.insights",
+        "resourceTypes": [
+          {
+            "resourceType": "components",
+            "locations": [
+              "uksouth"
+            ]
+          },
+          {
+            "resourceType": "diagnosticSettings",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Storage",
+        "resourceTypes": [
+          {
+            "resourceType": "storageAccounts",
+            "locations": [
+              "uksouth"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/microsoft.insights/components/agent1-gk",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "agent1-gk"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/serverfarms/ASP-BHUKBaseRG-9250",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-BHUKBaseRG-9250"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Storage/storageAccounts/bhukbaserga1d4",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "bhukbaserga1d4"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.DocumentDb/mongoClusters/agent1-gk-cosmosdbformongodb-bd55",
+            "resourceType": "Microsoft.DocumentDb/mongoClusters",
+            "resourceName": "agent1-gk-cosmosdbformongodb-bd55"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Storage/storageAccounts/bhukbaserga1d4",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "bhukbaserga1d4",
+            "actionName": "listKeys",
+            "apiVersion": "2022-05-01"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.CognitiveServices/accounts/BH-UK-OpenAI-TheLochLogicLegends",
+            "resourceType": "Microsoft.CognitiveServices/accounts",
+            "resourceName": "BH-UK-OpenAI-TheLochLogicLegends",
+            "actionName": "listKeys",
+            "apiVersion": "2024-06-01-preview"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.DocumentDB/mongoclusters/agent1-gk-cosmosdbformongodb-bd55",
+            "resourceType": "Microsoft.DocumentDB/mongoclusters",
+            "resourceName": "agent1-gk-cosmosdbformongodb-bd55",
+            "actionName": "listConnectionStrings",
+            "apiVersion": "2023-03-01-preview"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/microsoft.insights/components/agent1-gk",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "agent1-gk",
+            "apiVersion": "2015-05-01"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "agent1-gk"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk",
+            "resourceType": "Microsoft.Web/sites",
+            "resourceName": "agent1-gk"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk/basicPublishingCredentialsPolicies/scm",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "agent1-gk/scm"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk",
+            "resourceType": "Microsoft.Web/sites",
+            "resourceName": "agent1-gk"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk/basicPublishingCredentialsPolicies/ftp",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "agent1-gk/ftp"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk",
+            "resourceType": "Microsoft.Web/sites",
+            "resourceName": "agent1-gk"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/agent1-gk-id-b173",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "agent1-gk-id-b173"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/agent1-gk-id-b173",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "agent1-gk-id-b173",
+            "apiVersion": "2018-11-30"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk/sourcecontrols/web",
+        "resourceType": "Microsoft.Web/sites/sourcecontrols",
+        "resourceName": "agent1-gk/web"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk",
+            "resourceType": "Microsoft.Web/sites",
+            "resourceName": "agent1-gk"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/agent1-gk-id-b173",
+        "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+        "resourceName": "agent1-gk-id-b173"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/agent1-gk-id-b173",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "agent1-gk-id-b173"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/agent1-gk-id-b173/federatedIdentityCredentials/d4r5m3im2gavy",
+        "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials",
+        "resourceName": "agent1-gk-id-b173/d4r5m3im2gavy"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk",
+            "resourceType": "Microsoft.Web/sites",
+            "resourceName": "agent1-gk"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/agent1-gk-id-b173",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "agent1-gk-id-b173"
+          },
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/agent1-gk-id-b173",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "agent1-gk-id-b173",
+            "apiVersion": "2018-11-30"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk/providers/Microsoft.Authorization/roleAssignments/a267ca61-3fa8-5ac0-8b33-5b1243a0313b",
+        "resourceType": "Microsoft.Authorization/roleAssignments",
+        "resourceName": "a267ca61-3fa8-5ac0-8b33-5b1243a0313b"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Storage/storageAccounts/bhukbaserga1d4",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "bhukbaserga1d4"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/StorageBlobContainerTemplate",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "StorageBlobContainerTemplate"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Storage/storageAccounts/bhukbaserga1d4",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "bhukbaserga1d4"
+          }
+        ],
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Storage/storageAccounts/bhukbaserga1d4/blobServices/default/providers/microsoft.insights/diagnosticSettings/bhukbaserga1d4-sa-blob-logs",
+        "resourceType": "microsoft.insights/diagnosticSettings",
+        "resourceName": "bhukbaserga1d4-sa-blob-logs"
+      }
+    ],
+    "validationLevel": "Template"
+  },
+  "tags": {
+    "primaryResourceId": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourcegroups/BH-UK-Base-RG/providers/Microsoft.Web/sites/agent1-gk",
+    "provisioningHash": "customize-post-provisioning-steps-functionapp-deployment"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Web/sites",
+      "apiVersion": "2022-03-01",
+      "name": "agent1-gk",
+      "location": "UK South",
+      "properties": {
+        "serverFarmId": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/serverfarms/ASP-BHUKBaseRG-9250",
+        "siteConfig": {
+          "appSettings": [
+            { "name": "FUNCTIONS_WORKER_RUNTIME", "value": "node" },
+            { "name": "AzureWebJobsStorage", "value": "DefaultEndpointsProtocol=https;AccountName=bhukbaserga1d4;AccountKey=<storage-key>;EndpointSuffix=core.windows.net" },
+            { "name": "WEBSITE_NODE_DEFAULT_VERSION", "value": "16" }
+          ]
+        }
+      },
+      "identity": {
+        "type": "UserAssigned",
+        "userAssignedIdentities": {
+          "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/agent1-gk-id-b173": {}
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Web/sites/functions",
+      "apiVersion": "2022-03-01",
+      "name": "agent1-gk/httpendpoint",
+      "location": "UK South",
+      "properties": {
+        "scriptFile": "index.js",
+        "entryPoint": "httpendpoint",
+        "bindings": [
+          {
+            "type": "httpTrigger",
+            "direction": "in",
+            "authLevel": "function",
+            "methods": ["get", "post"]
+          },
+          {
+            "type": "http",
+            "direction": "out"
+          }
+        ]
+      }
+    }
+  ]
+}

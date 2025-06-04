@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "resourceGroupName": {
+      "value": "rg-${AZURE_ENV_NAME}"
+    },
+    "FUNCTIONS_WORKER_RUNTIME": {
+      "value": "python"
+    },
+    "AzureWebJobsStorage": {
+      "value": "<storage-connection-string>"
+    },
+    "WEBSITE_NODE_DEFAULT_VERSION": {
+      "value": "16"
+    },
+    "hasAppService": {
+      "value": true
+    }
+  }
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/68A2EC6ED65D77D0",
+    "operationId": "68A2EC6ED65D77D0",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2025-06-04T16:16:38.7901985Z",
+      "duration": "PT6M36.719908S",
+      "trackingId": "f4ba603e-9b4d-4f7e-916b-7f3cefcbc3d6",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.DocumentDb/mongoClusters/agent1-gk-cosmosdbformongodb-bd55",
+        "resourceType": "Microsoft.DocumentDb/mongoClusters",
+        "resourceName": "agent1-gk-cosmosdbformongodb-bd55"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/B0EEF5B4AEE5AD65",
+    "operationId": "B0EEF5B4AEE5AD65",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-06-04T16:17:01.324656Z",
+      "duration": "PT1.5006311S",
+      "trackingId": "3a4b5994-0f3a-4118-8626-3ed66166d6a5",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Storage/storageAccounts/bhukbaserga1d4/blobServices/default/providers/microsoft.insights/diagnosticSettings/bhukbaserga1d4-sa-blob-logs",
+        "resourceType": "microsoft.insights/diagnosticSettings",
+        "resourceName": "bhukbaserga1d4-sa-blob-logs"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/03772FD9265739D6",
+    "operationId": "03772FD9265739D6",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-06-04T16:16:38.7901985Z",
+      "duration": "PT24.441031S",
+      "trackingId": "1a5ec663-98a0-4bc3-ba31-663602d7282c",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/StorageBlobContainerTemplate",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "StorageBlobContainerTemplate"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/8A70A222F25C3BC2",
+    "operationId": "8A70A222F25C3BC2",
+    "properties": {
+      "provisioningOperation": "Action",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-06-04T16:17:01.324656Z",
+      "duration": "PT0.0787605S",
+      "trackingId": "2a3026ab-adb9-46a8-bb21-064f7e47d1af",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Storage/storageAccounts/bhukbaserga1d4",
+        "resourceType": "Microsoft.Storage/storageAccounts",
+        "resourceName": "bhukbaserga1d4",
+        "actionName": "listKeys",
+        "apiVersion": "2022-05-01"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/1809E39B49C52DBA",
+    "operationId": "1809E39B49C52DBA",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-06-04T16:16:38.7901985Z",
+      "duration": "PT3.0230057S",
+      "trackingId": "514493d4-2cde-456b-bb05-8975b2053aa9",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Web/serverfarms/ASP-BHUKBaseRG-9250",
+        "resourceType": "Microsoft.Web/serverfarms",
+        "resourceName": "ASP-BHUKBaseRG-9250"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/28049AE3BB9BFB1B",
+    "operationId": "28049AE3BB9BFB1B",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-06-04T16:16:38.7901985Z",
+      "duration": "PT22.4725593S",
+      "trackingId": "c76311fa-a683-48ca-960b-b801e517a880",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Storage/storageAccounts/bhukbaserga1d4",
+        "resourceType": "Microsoft.Storage/storageAccounts",
+        "resourceName": "bhukbaserga1d4"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/00B96BC0507CB7A6",
+    "operationId": "00B96BC0507CB7A6",
+    "properties": {
+      "provisioningOperation": "Read",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-06-04T16:16:38.7901985Z",
+      "duration": "PT1.4604706S",
+      "trackingId": "005675c5-5bfd-4fa2-b038-537000ef9b86",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/microsoft.insights/components/agent1-gk",
+        "resourceType": "microsoft.insights/components",
+        "resourceName": "agent1-gk",
+        "apiVersion": "2015-05-01"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/F2BCEF78B5318750",
+    "operationId": "F2BCEF78B5318750",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-06-04T16:16:38.7901985Z",
+      "duration": "PT1.3667046S",
+      "trackingId": "f4e086c3-9bcc-432f-bec6-97945b85c940",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/microsoft.insights/components/agent1-gk",
+        "resourceType": "microsoft.insights/components",
+        "resourceName": "agent1-gk"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-e3f83e8a-ba82/operations/455C6386C956B6A7",
+    "operationId": "455C6386C956B6A7",
+    "properties": {
+      "provisioningOperation": "Action",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-06-04T16:16:38.7901985Z",
+      "duration": "PT0.1948006S",
+      "trackingId": "4bbdd8e3-d032-42d8-b2e4-cff29ff979bc",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/c27ab754-1d68-4dac-8ac8-aab34020b6d4/resourceGroups/BH-UK-Base-RG/providers/Microsoft.CognitiveServices/accounts/BH-UK-OpenAI-TheLochLogicLegends",
+        "resourceType": "Microsoft.CognitiveServices/accounts",
+        "resourceName": "BH-UK-OpenAI-TheLochLogicLegends",
+        "actionName": "listKeys",
+        "apiVersion": "2024-06-01-preview"
+      }
+    }
+  }
+]

@@ -1,0 +1,4 @@
+services:
+  agent1-gk:
+    language: python
+    host: function
